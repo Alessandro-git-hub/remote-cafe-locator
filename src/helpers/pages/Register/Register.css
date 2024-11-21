@@ -1,0 +1,73 @@
+/* General Styles for the Register Page */
+.register-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background-color: #F5F3E7;
+    padding: 20px;
+  }
+  
+  .register-title {
+    font-size: 2rem;
+    color: #6F4E37;
+    margin-bottom: 20px;
+    font-weight: bold;
+  }
+  
+  /* Form Styles */
+  .register-form {
+    background-color: #FFFFFF;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 500px;
+  }
+  
+  .register-form input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #CCC;
+    border-radius: 4px;
+    font-size: 1rem;
+  }
+  
+  .register-form input:focus {
+    border-color: #E3A857;
+    outline: none;
+    box-shadow: 0 0 4px rgba(227, 168, 87, 0.5);
+  }
+  
+  .register-form button {
+    background-color: #E3A857;
+    color: #FFFFFF;
+    border: none;
+    padding: 10px 15px;
+    font-size: 1rem;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .register-form button:hover {
+    background-color: #FF5A5F;
+  }
+  
+  /* Error and Success Messages */
+  .register-message {
+    text-align: center;
+    margin-top: 10px;
+    font-size: 0.9rem;
+  }
+  
+  .register-message.error {
+    color: #FF5A5F
+  }
+  
+  .register-message.success {
+    color: #6F4E37;
+  }
+  

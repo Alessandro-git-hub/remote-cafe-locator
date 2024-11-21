@@ -1,18 +1,21 @@
+import React from 'react';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
-import Home from './pages/Home';
-import Favorites from './pages/Favorites';
-import Profile from './pages/Profile';
+import Header from './components/Header/Header';
+import MapView from './components/MapView/MapView';
+import Register from './helpers/pages/Register/Register';
 
-function App() {
+const App = () => {
   return (
     <Router>
-      <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/favorites" element={<Favorites />} />
-        <Route path="/profile" element={<Profile />} />
-      </Routes>
+      <div className="app">
+        <Header />
+        <Routes>
+          <Route path="/" element={<MapView />} />
+          <Route path="/register" element={<Register />} />
+        </Routes>
+      </div>
     </Router>
   );
-}
+};
 
 export default App;
